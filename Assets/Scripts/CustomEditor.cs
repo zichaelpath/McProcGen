@@ -9,8 +9,10 @@ public class CustomTerrainEditor : Editor
     {
         base.OnInspectorGUI();
 
+        // Targets an instance of Custom Terrain
         CustomTerrain terrain = (CustomTerrain)target;
 
+        // Creates buttons that call their associated method
         if (GUILayout.Button("Reset Terrain"))
         {
             terrain.ResetTerrain();
