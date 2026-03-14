@@ -465,13 +465,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CustomTerrain
   terrain: {fileID: 1683671522}
   terrainData: {fileID: 15600000, guid: 2181b2d7291a16c49aaec6514ebae880, type: 2}
-  resetTerrain: 0
+  resetTerrain: 1
   hmr: 513
-  perlinXScale: 0.02
-  perlinYScale: 0.01
+  seed: 10294
+  perlinParameters:
+  - perlinXScale: 0.003
+    perlinYScale: 0.003
+    offsetX: 0
+    offsetY: 0
+    perlinHeightScale: 0.15
+    octaves: 2
+    persistence: 0.4
+    remove: 0
+  - perlinXScale: 0.01
+    perlinYScale: 0.01
+    offsetX: 0
+    offsetY: 0
+    perlinHeightScale: 0.08
+    octaves: 4
+    persistence: 0.5
+    remove: 0
+  - perlinXScale: 0.05
+    perlinYScale: 0.05
+    offsetX: 0
+    offsetY: 0
+    perlinHeightScale: 0.02
+    octaves: 3
+    persistence: 0.6
+    remove: 0
+  perlinXScale: 0.001
+  perlinYScale: 0.001
   offsetX: 0
   offsetY: 0
-  perlinHeightScale: -0.01
+  perlinHeightScale: 0.25
+  octaves: 6
+  persistence: 0.4
+  voronoiFallOff: 1
+  voronoiDropOff: 1
+  voronoiMinHeight: 0.1
+  voronoiMaxHeight: 0.5
+  peaks: 12
+  voronoi: 3
 --- !u!154 &1683671521
 TerrainCollider:
   m_ObjectHideFlags: 0
